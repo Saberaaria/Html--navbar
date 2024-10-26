@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+  <style>
+      body{ margin: 0px;
+           padding: 0px;
+      }
+      ul{background-color: gray;
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+      }
+      li{display: inline-block
+      }
+      li a{text-decoration: none;
+           display: block;
+           color: white;
+           padding:20px;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      }
+      li a:hover{color: black;
+                 border-bottom: 3px solid black
+      }
+      .dropdown-c{position: relative
+      }
+      .dropdown{background-color: black;
+               box-shadow: 2px 2px 5px gray;
+               position: absolute;
+               display: none
+      }
+      .dropdown li{display: block
+      }
+      .dropdown-c:hover .dropdown{display: block}
+  </style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Services</a></li>
+            <li class="dropdown-c"><a href="">Gallery</a>
+              <div class="dropdown">
+                  <ul>
+                      <li><a href="">Page 1</a></li>
+                      <li><a href="">Page 2</a></li>
+                      <li><a href="">Page 3</a></li>
+                      <li><a href="">Page 4</a></li>
+                  </ul>
+              </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

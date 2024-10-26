@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+  <style>
+      body{background-image: url(../Media/IMG_1385.JPG); 
+           background-size: 100% 100% ;
+}
+
+.div1{background-color: rgba(151, 151, 149, 0.548);
+height: 350px;
+width: 600px;
+margin: 400px;
+margin-top: 80px;
+border-radius: 50px;
+}
+/* 
+.dropdown-c:hover {
+  box-shadow: 20px 20px 30px rgba(25, 25, 26, 0.596),-20px -20px 30px rgba(5, 5, 5, 0.596);
+} */
+.dropdown-c{width: 200px;
+           background-color: rgba(31, 130, 155, 0.829);
+           padding: 20px;
+           border: none;
+           color: white;
+           border-radius: 10px;
+           text-align: center;
+           margin-top: 90px;
+           margin-left: 190px;
+           position: relative
+}
+     ul{background-color: gray;
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+      }
+      li a{text-decoration: none;
+           display: block;
+           color: white;
+           padding:20px;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           border-bottom: 1px solid black
+      }
+      li a:hover{color: black;
+        box-shadow: 20px 20px 30px rgba(25, 25, 26, 0.596),-20px -20px 30px rgba(5, 5, 5, 0.596);
+}
+      
+      .dropdown{background-color: black;
+               box-shadow: 2px 2px 5px gray;
+               position: absolute;
+               display: none;
+               top: 57px;
+               right: 0px
+      }
+      .dropdown li{display: block;
+                   width: 200px
+      }
+     .div1 .dropdown-c:hover .dropdown{display: block}
+  </style>
+<body>
+        <div class="div1">
+              
+             <button  class="dropdown-c">submit
+                    <div class="dropdown">
+                            <ul>
+                                <li><a href="">Link 1</a></li>
+                                <li><a href="">Link 2</a></li>
+                                <li><a href="">Link 3</a></li>
+                                <li><a href="">Link 4</a></li>
+                            </ul>
+                        </div>
+
+
+             </button>
+               
+        
+     </div>   
+</body>
+</html>
